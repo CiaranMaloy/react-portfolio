@@ -21,7 +21,7 @@ const Logo = () => {
                 })
                 .from(outlineLogoRef.current, {
                     drawSVG: 0,
-                    duration: 120,
+                    duration: 240,
                 })
 
             gsap.fromTo(
@@ -396,12 +396,6 @@ const Logo = () => {
 29 -19 36 -16 26 10 -106 122 -200 171 -103 52 -133 61 -54 14z"/>
                 </g>
             </svg>
-            <img
-                className="solid-logo"
-                ref={solidLogoRef}
-                src={LogoS}
-                alt="JavaScript,  Developer"
-            />
 
         </div>
     )
