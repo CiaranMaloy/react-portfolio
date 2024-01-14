@@ -1,4 +1,4 @@
-import LogoTitle from '../../assets/images/logo-s.png';
+import LogoTitle from '../../assets/images/letter-c.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+    const nameArray = ['i', 'a', 'r', 'a', 'n', '', 'M', 'a', 'l', 'o', 'y']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
     useEffect(() => {

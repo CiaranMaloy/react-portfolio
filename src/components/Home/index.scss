@@ -42,10 +42,11 @@
       img {
         margin-left: 20px;
         opacity: 0;
-        width: 32px;
+        width: 52px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+        -webkit-filter: invert(1);
       }
     }
   
