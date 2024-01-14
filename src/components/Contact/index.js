@@ -99,7 +99,7 @@ const Contact = () => {
                     </MapContainer>
                 </div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="ball-beat" />
         </>
     )
 }
