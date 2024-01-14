@@ -1,16 +1,15 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import LogoS from '../../../assets/images/Zappy-logo.png'
 import './index.scss'
 
 const Logo = () => {
     const bgRef = useRef()
     const outlineLogoRef = useRef()
-    const solidLogoRef = useRef()
 
     useEffect(() => {
         let ctx = gsap.context(() => {
+
             gsap.registerPlugin(DrawSVGPlugin)
 
             gsap
@@ -23,18 +22,7 @@ const Logo = () => {
                     drawSVG: 0,
                     duration: 240,
                 })
-
-            gsap.fromTo(
-                solidLogoRef.current,
-                {
-                    opacity: 0,
-                },
-                {
-                    opacity: 1,
-                    delay: 4,
-                    duration: 4,
-                }
-            )
+                
         });
         return () => ctx.revert(); // <- cleanup!
     }, [])

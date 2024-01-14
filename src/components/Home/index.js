@@ -1,4 +1,3 @@
-import LogoTitle from '../../assets/images/letter-c.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
@@ -34,7 +33,7 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={22}/>
+                idx={23}/>
                 </h1>
                 <h2>Frontend Developer /Javascript Expert /YouTuber</h2>
                 <Link to="/contact" classname='flat-button'>CONTACT ME</Link>
