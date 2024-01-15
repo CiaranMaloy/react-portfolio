@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+//import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
 import './index.scss'
 
 const Logo = () => {
@@ -10,17 +10,13 @@ const Logo = () => {
     useEffect(() => {
         let ctx = gsap.context(() => {
 
-            gsap.registerPlugin(DrawSVGPlugin)
+            //gsap.registerPlugin(DrawSVGPlugin)
 
             gsap
                 .timeline()
                 .to(bgRef.current, {
                     duration: 1,
                     opacity: 1,
-                })
-                .from(paths, {
-                    drawSVG: 0,
-                    duration: 120,
                 })
                 
         });

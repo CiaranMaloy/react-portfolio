@@ -1,12 +1,16 @@
-# fly.toml app configuration file generated for portfolio-test-image-purple-dream-7022 on 2024-01-15T13:46:00Z
+# fly.toml app configuration file generated for portfolio-test-image-purple-dream-7022-snowy-forest-1336 on 2024-01-15T16:34:42Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "portfolio-test-image-purple-dream-7022"
+app = "portfolio-test-image-purple-dream-7022-snowy-forest-1336"
 primary_region = "lhr"
 
+[deploy]
+  wait_timeout = "10m"
+
 [build]
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 3000

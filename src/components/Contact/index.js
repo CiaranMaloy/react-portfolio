@@ -49,9 +49,9 @@ const Contact = () => {
                             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
                             idx={15} />
                     </h1>
-                    <p>
+                    <h2>
                         Please get in touch!
-                    </p>
+                    </h2>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
