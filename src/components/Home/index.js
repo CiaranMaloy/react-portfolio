@@ -33,7 +33,7 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={28}/>
+                idx={15}/>
                 </h1>
                 <h2>Full Stack Developer /Audio Data Expert /Music Producer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>

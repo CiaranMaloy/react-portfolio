@@ -3,7 +3,7 @@ import './index.scss'
 import LogoS from '../../assets/images/Zappy-logo.png'
 import LogoSubtitle from '../../assets/images/CM-name.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faEnvelope, faUser, faList } from '@fortawesome/free-solid-svg-icons'
 import {
     faLinkedin,
     faGithub,
@@ -26,6 +26,9 @@ const Sidebar = () => (
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact'>
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="projects-link" to='/projects'>
+                <FontAwesomeIcon icon={faList} color='#4d4d4e' />
             </NavLink>
         </nav>
         <ul>

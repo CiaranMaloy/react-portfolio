@@ -33,13 +33,13 @@ const About = () => {
                         />
                     </h2>
                     <p>
-                        Ambitious: Talk about my plans for the future 
+                        With a background rooted in Acoustical and Audio Engineering, I am driven by a relentless ambition to push the boundaries of technology. From designing cutting-edge audio algorithms to exploring the realms of machine learning, I consistently seek opportunities to contribute to innovative solutions that redefine industry standards.
                     </p>
                     <p>
-                        Confident: Talk about what I have done and am workign on 
+                        As an experienced Audio Engineer, I approach challenges with unwavering confidence. My proficiency in software development, particularly in backend design and data analysis using Python, coupled with my expertise in VST design in C++, reflects my confidence in navigating diverse technical landscapes. I am adept at implementing machine learning systems and algorithms for Music Information Retrieval, showcasing a confident stride in the rapidly evolving field of audio technology.
                     </p>
                     <p>
-                        Humble: Talk about personal things like Muay Thai and music, soundcloud etc
+                        Despite my technical prowess, I maintain a humble perspective that values continuous learning and collaboration. Whether providing on-site acoustic testing for high-profile clients or consulting on essential business services, I understand the importance of humility in approaching tasks. My commitment to effective communication, collaboration, and problem-solving underscores my belief in the power of collective intelligence and teamwork.
                     </p>
                 </div>
                 <div className='stage-cube-cont'>
