@@ -26,11 +26,7 @@ const About = () => {
                         />
                     </h1>
                     <h2>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['Ambitious', ' ', 'Confident', ' ', 'Humble']}
-                            idx={23}
-                        />
+                    Ambitious /Confident /Humble
                     </h2>
                     <p>
                         With a background rooted in Acoustical and Audio Engineering, I am driven by a relentless ambition to push the boundaries of technology. From designing cutting-edge audio algorithms to exploring the realms of machine learning, I consistently seek opportunities to contribute to innovative solutions that redefine industry standards.

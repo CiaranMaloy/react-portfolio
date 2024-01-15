@@ -21,8 +21,6 @@ const Logo = () => {
                 .from(paths, {
                     drawSVG: 0,
                     duration: 120,
-                    repeat: -1,
-                    yoyo: true
                 })
                 
         });
