@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faPython, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Loader } from 'react-loaders'
 
 const About = () => {
@@ -25,20 +25,27 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
+                    <h2>
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['Ambitious', ' ', 'Confident', ' ', 'Humble']}
+                            idx={23}
+                        />
+                    </h2>
                     <p>
-                        Ambitious
+                        Ambitious: Talk about my plans for the future 
                     </p>
                     <p>
-                        Confident
+                        Confident: Talk about what I have done and am workign on 
                     </p>
                     <p>
-                        Humble
+                        Humble: Talk about personal things like Muay Thai and music, soundcloud etc
                     </p>
                 </div>
                 <div className='stage-cube-cont'>
                     <div className="cubespinner">
                         <div className="face1">
-                            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                            <FontAwesomeIcon icon={faPython} color="#3776ab" />
                         </div>
                         <div className="face2">
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -58,7 +65,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="ball-beat"/>
+            <Loader type="ball-beat" />
         </>
     )
 }

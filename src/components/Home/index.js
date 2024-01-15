@@ -8,8 +8,8 @@ import Loader from 'react-loaders';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = [' ', 'C', 'i', 'a', 'r', 'a', 'n', '', 'M', 'a', 'l', 'o', 'y']
-    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+    const nameArray = " Ciaran Maloy".split("")
+    const jobArray = "(Hedgehog unrelated)".split("")
 
     useEffect(() => {
         setTimeout (() => {
@@ -23,7 +23,7 @@ const Home = () => {
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>H</span>
-                <span className={`${letterClass} _12`}>I</span>
+                <span className={`${letterClass} _12`}>i,</span>
                 <br />
                 <span className={`${letterClass} _13`}>I</span>
                 <span className={`${letterClass} _14`}>'m</span>
@@ -33,10 +33,10 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={23}/>
+                idx={28}/>
                 </h1>
-                <h2>Frontend Developer /Javascript Expert /YouTuber</h2>
-                <Link to="/contact" classname='flat-button'>CONTACT ME</Link>
+                <h2>Full Stack Developer /Audio Data Expert /Music Producer</h2>
+                <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo />
         </div>

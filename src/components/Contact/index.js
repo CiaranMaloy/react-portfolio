@@ -75,14 +75,13 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='info-map'>
-                    Ciaran Maloy,
-                    <br />
-                    United Kingdom
+                    Ciaran Maloy
                     <br />
                     London
                     <br />
                     SE1 4DU
                     <br />
+                    United Kingdom
                     <span>1ciaran.maloy@gmail.com</span>
                 </div>
                 <div className="map-wrap">
