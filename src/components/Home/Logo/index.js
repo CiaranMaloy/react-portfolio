@@ -5,7 +5,7 @@ import './index.scss'
 
 const Logo = () => {
     const bgRef = useRef()
-    const outlineLogoRef = useRef()
+    const paths = document.querySelectorAll('svg path');
 
     useEffect(() => {
         let ctx = gsap.context(() => {
@@ -18,14 +18,14 @@ const Logo = () => {
                     duration: 1,
                     opacity: 1,
                 })
-                .from(outlineLogoRef.current, {
+                .from(paths, {
                     drawSVG: 0,
-                    duration: 240,
+                    duration: 120,
                 })
                 
         });
         return () => ctx.revert(); // <- cleanup!
-    }, [])
+    }, [paths])
 
     return (
         <div className="logo-container" ref={bgRef}>
@@ -42,7 +42,6 @@ const Logo = () => {
                     fill="none"
                 >
                     <path
-                        ref={outlineLogoRef}
                         d="M1314 2609 c-27 -17 -70 -52 -96 -77 l-48 -46 -1 39 c-1 22 -4 51 -8
             65 -7 23 -10 19 -40 -43 -18 -37 -35 -84 -38 -104 l-6 -36 -18 24 -19 24 0
             -45 0 -45 -84 0 c-76 0 -87 -3 -110 -24 -14 -14 -26 -30 -26 -38 0 -22 -19
