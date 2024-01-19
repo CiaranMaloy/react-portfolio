@@ -1,127 +1,263 @@
-.nav-bar {
-    background: #181818;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav-bar {
+        background: #181818;
+        width: 60px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        min-height: 500px;
 
-    .logo {
-        display: block;
-        padding: 8px 0;
-
-        img {
+        .logo {
             display: block;
-            margin: 8px auto;
-            width: 45px;
-            height: auto;
-            -webkit-filter: invert(1);
+            padding: 8px 0;
 
-            &.sub-logo {
-                width: 50px;
+            img {
+                display: block;
+                margin: 8px auto;
+                width: 45px;
+                height: auto;
+                -webkit-filter: invert(1);
+
+                &.sub-logo {
+                    width: 50px;
+                }
             }
         }
-    }
 
-    nav {
-        display: block;
-        text-align: center;
-        position: absolute;
-        height: 210px;
-        top: 50%;
-        margin-top: -120px;
-        width: 100%;
-
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
+        nav {
             display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            height: 210px;
+            top: 50%;
+            margin-top: -120px;
+            width: 100%;
 
-            i {
-                transition: all 0.3s ease-out;
-            }
+            a {
+                font-size: 22px;
+                color: #4d4d4e;
+                display: block;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                text-decoration: none;
 
-            &:hover {
-                color: #ffd700;
+                i {
+                    transition: all 0.3s ease-out;
+                }
 
-                svg {
-                    opacity: 0;
+                &:hover {
+                    color: #ffd700;
+
+                    svg {
+                        opacity: 0;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                    }
                 }
 
                 &:after {
-                    opacity: 1;
+                    content: "";
+                    font-size: 9px;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+
+                &:first-child {
+                    &::after {
+                        content: "Home";
+                    }
                 }
             }
 
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
+            a.about-link {
+                &:after {
+                    content: "About";
+                }
             }
 
-            &:first-child {
-                &::after {
-                    content: 'Home';
+            a.contact-link {
+                &:after {
+                    content: "Contact";
+                }
+            }
+
+            a.projects-link {
+                &:after {
+                    content: "Projects";
+                }
+            }
+
+            a.active {
+                svg {
+                    color: #ffd700;
                 }
             }
         }
 
-        a.about-link {
-            &:after {
-                content: 'About';
-            }
-        }
+        ul {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: block;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 0;
 
-        a.contact-link {
-            &:after {
-                content: 'Contact';
-            }
-        }
+            li {
+                a {
+                    padding: 7px 0;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 16px;
 
-        a.projects-link {
-            &:after {
-                content: 'Projects';
-            }
-        }
-
-        a.active {
-            svg {
-                color: #ffd700;
+                    &:hover svg {
+                        color: #ffd700;
+                    }
+                }
             }
         }
     }
+}
 
-    ul {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        background: #181818;
+        width: 10%;
+        height: 100%;
         position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
+        top: 0;
+        z-index: 3;
+        min-height: 100%;
 
-        li {
-            a {
-                padding: 7px 0;
+        .logo {
+            display: block;
+            padding: 8px 0;
+
+            img {
                 display: block;
-                font-size: 15px;
-                line-height: 16px;
+                margin: 8px auto;
+                width: 90%;
+                height: auto;
+                -webkit-filter: invert(1);
 
-                &:hover svg {
+                &.sub-logo {
+                    width: 90%;
+                }
+            }
+        }
+
+        nav {
+            display: block;
+            text-align: center;
+            position: absolute;
+            height: 100%;
+            top: 50%;
+            margin-top: -120px;
+            width: 100%;
+
+            a {
+                font-size: 22px;
+                color: #4d4d4e;
+                display: block;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                text-decoration: none;
+
+                i {
+                    transition: all 0.3s ease-out;
+                }
+
+                &:hover {
                     color: #ffd700;
+
+                    svg {
+                        opacity: 0;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    content: "";
+                    font-size: 9px;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+
+                &:first-child {
+                    &::after {
+                        content: "Home";
+                    }
+                }
+            }
+
+            a.about-link {
+                &:after {
+                    content: "About";
+                }
+            }
+
+            a.contact-link {
+                &:after {
+                    content: "Contact";
+                }
+            }
+
+            a.projects-link {
+                &:after {
+                    content: "Projects";
+                }
+            }
+
+            a.active {
+                svg {
+                    color: #ffd700;
+                }
+            }
+        }
+
+        ul {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: block;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 0;
+
+            li {
+                a {
+                    padding: 7px 0;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 16px;
+
+                    &:hover svg {
+                        color: #ffd700;
+                    }
                 }
             }
         }
