@@ -26,16 +26,24 @@ const About = () => {
                         />
                     </h1>
                     <h2>
-                    Ambitious /Confident /Humble
+                        Ambitious /Confident /Humble
                     </h2>
                     <p>
-                        With a background rooted in Acoustical and Audio Engineering, I am driven by a relentless ambition to push the boundaries of technology. From designing cutting-edge audio algorithms to exploring the realms of machine learning, I consistently seek opportunities to contribute to innovative solutions that redefine industry standards.
+                        With a background rooted in Audio Technology and Data Science, I am driven by a relentless ambition to push the boundaries of technology.
+                        From designing cutting-edge audio algorithms to exploring the realms of machine learning, I consistently seek opportunities to contribute to innovative solutions
+                        and disruptive technology.
                     </p>
                     <p>
-                        As an experienced Audio Engineer, I approach challenges with unwavering confidence. My proficiency in software development, particularly in backend design and data analysis using Python, coupled with my expertise in VST design in C++, reflects my confidence in navigating diverse technical landscapes. I am adept at implementing machine learning systems and algorithms for Music Information Retrieval, showcasing a confident stride in the rapidly evolving field of audio technology.
+                        As an experienced Engineer, I approach challenges with unwavering confidence.
+                        My proficiency in software development, particularly in backend design and data analysis, coupled with my expertise in VST design in C++,
+                        reflects my assurance in navigating diverse technical landscapes.
+                        I am adept at implementing machine learning systems and algorithms for Music Information Retrieval,
+                        showcasing a bold stride in the rapidly evolving field of audio technology.
                     </p>
                     <p>
-                        Despite my technical prowess, I maintain a humble perspective that values continuous learning and collaboration. Whether providing on-site acoustic testing for high-profile clients or consulting on essential business services, I understand the importance of humility in approaching tasks. My commitment to effective communication, collaboration, and problem-solving underscores my belief in the power of collective intelligence and teamwork.
+                        With a strong technical prowess, I embrace a down-to-earth perspective that values continuous learning and collaboration.
+                        Whether I'm training in Muay Thai or producing music, I recognize the significance of approaching each endeavor with an exploratory mindset.
+                        My dedication to effective communication, collaboration, and problem-solving underscores my belief in the potent synergy of collective teamwork and self-reflection.
                     </p>
                 </div>
                 <div className='stage-cube-cont'>
