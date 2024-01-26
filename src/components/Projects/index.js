@@ -2,6 +2,12 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useState, useEffect } from 'react'
 import { Loader } from 'react-loaders'
+import { Link, NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faEnvelope, faUser, faList } from '@fortawesome/free-solid-svg-icons'
+
+import { projectsList } from './projectsList';
+import ProjectBox from '../ProjectBox/index';
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -26,7 +32,7 @@ const Projects = () => {
 
     return (
         <>
-            <div className='container about-page'>
+            <div className='container projects-page'>
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters
@@ -38,13 +44,11 @@ const Projects = () => {
                     <h2>
                         Things I've been working on!
                     </h2>
-                        {(typeof data.members === 'undefined') ? (
-                            <p>Loading...</p>
-                        ): (
-                            data.members.map((member, i) => (
-                                <p key={i}>{member}</p>
-                            ))
-                        )}
+                    <div className='all-projects-container'>
+                        {projectsList.map((project) => {
+                            return <ProjectBox key={project.id} {...project} />;
+                        })}
+                    </div>
                 </div>
             </div>
             <Loader type="ball-beat" />

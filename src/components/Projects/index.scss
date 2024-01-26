@@ -1,15 +1,4 @@
 @media only screen and (min-width: 1200px) {
-    .stage-cube-cont {
-        width: 50%;
-        height: 100%;
-        top: 0;
-        padding-top: 18%;
-        margin-left: 0;
-        position: absolute;
-        right: 0;
-        overflow: hidden;
-    }
-
     h2 {
         color: #8d8d8d;
         margin-top: 20px;
@@ -19,20 +8,17 @@
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
+
+    .all-projects-container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+      }
 }
 
 @media only screen and (max-width: 600px) {
-    .stage-cube-cont:disabled{
-        width: 90%;
-        height: 90%;
-        top: 27%;
-        padding-top: 100%;
-        margin-left: 0;
-        position: absolute;
-        right: 0;
-        overflow: hidden;
-        opacity: 1;
-    }
 
     h2 {
         color: #8d8d8d;
