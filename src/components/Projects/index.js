@@ -1,8 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useState, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPython, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Loader } from 'react-loaders'
 
 const Projects = () => {
@@ -40,15 +38,13 @@ const Projects = () => {
                     <h2>
                         Things I've been working on!
                     </h2>
-                    <p>
-                        Projects
-                    </p>
-                    <p>
-                        Projects
-                    </p>
-                    <p>
-                        Projects
-                    </p>
+                        {(typeof data.members === 'undefined') ? (
+                            <p>Loading...</p>
+                        ): (
+                            data.members.map((member, i) => (
+                                <p key={i}>{member}</p>
+                            ))
+                        )}
                 </div>
             </div>
             <Loader type="ball-beat" />
