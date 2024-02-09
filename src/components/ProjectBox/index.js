@@ -11,6 +11,8 @@ import {
   SiSass,
   SiCss3,
   SiHtml5,
+  SiPython, 
+  SiCplusplus
 } from 'react-icons/si';
 
 const technologiesIcons = {
@@ -22,6 +24,8 @@ const technologiesIcons = {
   sass: <SiSass key={6} />,
   css: <SiCss3 key={7} />,
   html: <SiHtml5 key={8} />,
+  python: <SiPython key={9} />,
+  cpp: <SiCplusplus key={10} />
 };
 
 const ProjectBox = ({ name, description, github, demo, technologies }) => {
